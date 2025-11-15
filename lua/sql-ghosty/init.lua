@@ -74,7 +74,7 @@ local function process_insert_node(node, bufnr)
 				local row_values = {}
 				for val_node in child:iter_children() do
 					if get_node_type(val_node) == "literal" or
-					   get_node_type(val_node) == "invocation" or 
+					   get_node_type(val_node) == "invocation" or
 					   get_node_type(val_node) == "field" or
 					   get_node_type(val_node) == "case" or
 					   get_node_type(val_node) == "subquery" or

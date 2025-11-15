@@ -73,7 +73,7 @@ local function process_insert_node(node, bufnr)
 				-- Values list (one row)
 				local row_values = {}
 				for val_node in child:iter_children() do
-					if get_node_type(val_node) == "literal" or 
+					if get_node_type(val_node) == "literal" or
 					   get_node_type(val_node) == "invocation" or 
 					   get_node_type(val_node) == "field" or
 					   get_node_type(val_node) == "case" or
